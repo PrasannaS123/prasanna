@@ -1,0 +1,315 @@
+.home-sec {
+    background-image: url("../../assets/banner.jpg");
+    padding-top: 60px;
+}
+
+
+h1 {
+    font-family: "Poppins", sans-serif !important;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.title {
+    font-family: "Poppins", sans-serif !important;
+    color: rgb(85, 230, 165) !important;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.job-desc {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    color: #a2a2a2;
+    line-height: 28px;
+}
+
+.role {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.animated-role {
+    display: inline-block;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+    font-weight: 900;
+}
+
+.animated-role.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.button {
+    background-color: rgb(85, 230, 165);
+    padding: 12px 14px;
+    font-family: "Poppins", sans-serif !important;
+    color: #02050a;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    svg path {
+        stroke: #02050a;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: rgb(85, 230, 165);
+        border: 1px solid rgb(85, 230, 165);
+    }
+
+    &:hover svg path {
+        stroke: rgb(85, 230, 165);
+    }
+
+}
+
+h5 {
+    color: rgb(85, 230, 165);
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+}
+
+.service-sec {
+    padding-top: 80px;
+}
+
+.skill-sec {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.project-sec {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.service {
+    border: 2.4px solid rgb(25, 25, 25);
+    color: rgb(162, 162, 162);
+    box-sizing: border-box;
+    display: block;
+    padding: 80px 20px 20px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.service-title {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.service-desc {
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.skill-desc {
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.year {
+    border: 0.8px solid rgb(85, 230, 165);
+    color: rgb(85, 230, 165);
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 54.2px;
+    line-height: 30.6px;
+    margin: 0;
+    padding: 11px 24px;
+}
+
+.skill-title {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.skill-card {
+    background-color: rgb(21, 28, 37);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-repeat: repeat;
+    background-position: 0% 0%;
+    background-size: auto;
+    box-sizing: border-box;
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    text-align: start;
+
+}
+
+.skill-text {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 15px 40px;
+    text-align: start;
+    text-transform: uppercase;
+
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eee;
+    height: 10px;
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: rgb(85, 230, 165);
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+}
+
+.project-card {
+    background-color: rgb(9, 16, 26);
+    padding: 20px;
+    width: 100% !important;
+}
+
+.project-title {
+    color: rgb(85, 230, 165);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-desc {
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/* .img-circle {
+    background-color: rgb(85, 230, 165);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.img-circle:hover img {
+    transform: scale(1.1);
+} */
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .skill-title {
+        font-size: 25px;
+    }
+}

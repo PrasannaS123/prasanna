@@ -1,0 +1,58 @@
+<section class="projects">
+    <div class="container">
+        <h5 class="text-start mb-3">Featured Projects</h5>
+        <h2 class="text-start">
+            Bringing Innovation to Life Through <br> Meaningful Real-World Creations
+        </h2>
+        <div class="buttons d-flex justify-content-end align-items-center mt-3">
+            <button type="button" class="icon-button mx-2" (click)="prevPage()" [disabled]="currentPage === 1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="icon">
+                    <path fill="currentColor"
+                        d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z" />
+                </svg>
+            </button>
+
+            <button type="button" class="icon-button mx-2" (click)="nextPage()" [disabled]="currentPage === totalPages">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="icon">
+                    <path fill="currentColor"
+                        d="M338.752 104.704a64 64 0 000 90.496l316.8 316.8-316.8 316.8a64 64 0 0090.496 90.496l362.048-362.048a64 64 0 000-90.496L429.248 104.704a64 64 0 00-90.496 0z" />
+                </svg>
+            </button>
+        </div>
+        <div class="project-list pt-5">
+            <div class="row g-lg-5 g-3">
+                <div class="col-lg-4 col-md-6 col-12" *ngFor="let project of paginatedProjects">
+                    <div class="d-flex flex-column h-100">
+                        <div class="position-relative mb-3">
+                            <img [src]="project.image" class="img-fluid w-100" alt="">
+                            <div class="position-absolute bottom-0 start-0 w-100">
+                                <div class="project-card text-center">
+                                    <h3 class="project-title mb-0">{{project.title}}</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-grow-1">
+                            <p class="project-desc">{{project.description}}
+                            </p>
+
+                        </div>
+
+                        <div class="mt-auto">
+                            <span class="sub-title mb-3 d-block">ROLE<br>
+                                <strong class="rolename">{{project.role}}</strong>
+                            </span>
+                            <span class="sub-title mb-3 d-block">Development Tools<br>
+                                <strong class="rolename">{{project.tools}}</strong>
+                            </span>
+                            <span class="sub-title mb-3 d-block">Duration<br>
+                                <strong class="rolename">{{project.duration}}</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

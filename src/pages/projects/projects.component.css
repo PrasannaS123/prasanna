@@ -1,0 +1,98 @@
+.projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h5 {
+    color: rgb(85, 230, 165);
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+}
+
+.project-card {
+    background-color: rgb(9, 16, 26);
+    padding: 20px;
+    width: 100% !important;
+}
+
+.project-title {
+    color: rgb(85, 230, 165);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-desc {
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.sub-title {
+    color: rgb(162, 162, 162);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project-list img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rolename {
+    color: rgb(85, 230, 165);
+}
+
+.icon-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(85, 230, 165);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: rgb(85, 230, 165);
+}
+
+.icon-button:hover {
+    background-color: rgb(85, 230, 165);
+    color: #000;
+}
+
+.icon-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+@media(max-width: 768px) {
+
+    h2 {
+        font-size: 28px;
+    }
+}
