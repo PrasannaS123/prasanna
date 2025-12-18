@@ -109,7 +109,15 @@ export class ProjectsComponent implements OnInit {
       tools: 'Flutter, Dart, REST API, Firebase, GitLab',
       role: 'Flutter Developer (UI & App Development)',
     },
-
+    {
+      title: 'Indrio Automation',
+      image: 'assets/projects/automation.jpg',
+      description:
+        'A modern and fully responsive website interface designed for Indrio Automation, focused on presenting industrial solutions and services with clarity and precision. The design emphasizes clean layouts, intuitive navigation, and consistent visual hierarchy to ensure a professional user experience, delivering a polished and accessible interface across desktop and mobile devices.',
+      duration: 'Dec 2025',
+      tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, Github',
+      role: 'Front-End Developer (UI)',
+    },
 
 
 
