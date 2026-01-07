@@ -13,6 +13,23 @@ h5 {
     letter-spacing: 1.4px;
 }
 
+.nav.nav-pills {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif !important;
+    
+}
+
+.nav-link {
+    color: rgb(85, 230, 165);
+    border: 2px solid rgb(85, 230, 165);
+}
+
+.nav-link.active {
+    background-color: rgb(85, 230, 165);
+    color: black;
+}
+
 h2 {
     color: rgb(255, 255, 255);
     font-size: 38px;
@@ -88,6 +105,18 @@ h2 {
 .icon-button:disabled {
     opacity: 0.4;
     cursor: not-allowed;
+}
+
+
+.coming-soon-card .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.coming-soon-card .project-desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
 }
 
 @media(max-width: 768px) {

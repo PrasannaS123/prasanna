@@ -9,7 +9,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrl: './projects.component.css',
 })
 export class ProjectsComponent implements OnInit {
-  projects = [
+  companyprojects = [
     {
       title: 'Postcargo',
       image: 'assets/projects/postcargo.jpg',
@@ -109,6 +109,9 @@ export class ProjectsComponent implements OnInit {
       tools: 'Flutter, Dart, REST API, Firebase, GitLab',
       role: 'Flutter Developer (UI & App Development)',
     },
+  ];
+
+  freelanceproject = [
     {
       title: 'Indrio Automation',
       image: 'assets/projects/automation.jpg',
@@ -118,64 +121,118 @@ export class ProjectsComponent implements OnInit {
       tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, Github',
       role: 'Front-End Developer (UI)',
     },
+    {
+      title: 'Jaja Finex',
+      image: 'assets/projects/jaja-finex.jpg',
+      description:
+        'A modern and feature-rich online trading and investment platform interface designed for Jaja Finex, focused on delivering a seamless experience across stock trading, IPO investments, mutual funds, and financial services. The design highlights clean layouts, strong visual hierarchy to ensure clarity, trust, and usability, providing a professional.',
+      duration: 'Jan 2025',
+      tools: 'Next.js, React Components, Tailwind CSS',
+      role: 'Front-End Developer (UI)',
+    }
+  ]
 
+  paginatedcompanyProjects: any[] = [];
+  currentCompanyPage = 1;
+  itemsPerCompanyPage = 3;
+  totalCompanyPages = 0;
 
-
-  ];
-
-  paginatedProjects: any[] = [];
-  currentPage = 1;
-  itemsPerPage = 3;
-  totalPages = 0;
+  paginatedfreelanceProjects: any[] = [];
+  currentfreelancePage = 1;
+  itemsPerfreelancePage = 3;
+  totalfreelancePages = 0;
 
   ngOnInit() {
-    this.updateItemsPerPage();
-    this.updatePaginatedProjects();
+    this.updateCompanyItemsPerPage();
+    this.updateCompanyPaginatedProjects();
+    this.updateCFreelanceItemsPerPage();
+    this.updateFreelancePaginatedProjects();
   }
 
   @HostListener('window:resize')
   onResize() {
-    this.updateItemsPerPage();
+    this.updateCompanyItemsPerPage();
+    this.updateCFreelanceItemsPerPage();
   }
 
 
-  updateItemsPerPage() {
+  updateCompanyItemsPerPage() {
     const width = window.innerWidth;
     let newItemsPerPage = 3;
 
     if (width <= 767) {
-      newItemsPerPage = 1; 
+      newItemsPerPage = 1;
     } else if (width <= 1199) {
-      newItemsPerPage = 2; 
+      newItemsPerPage = 2;
     } else {
       newItemsPerPage = 3;
     }
 
-    if (newItemsPerPage !== this.itemsPerPage) {
-      this.itemsPerPage = newItemsPerPage;
-      this.currentPage = 1;
-      this.updatePaginatedProjects();
+    if (newItemsPerPage !== this.itemsPerCompanyPage) {
+      this.itemsPerCompanyPage = newItemsPerPage;
+      this.currentCompanyPage = 1;
+      this.updateCompanyPaginatedProjects();
     }
   }
 
-  updatePaginatedProjects() {
-    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-    const endIndex = startIndex + this.itemsPerPage;
-    this.paginatedProjects = this.projects.slice(startIndex, endIndex);
-    this.totalPages = Math.ceil(this.projects.length / this.itemsPerPage);
+  updateCFreelanceItemsPerPage() {
+    const width = window.innerWidth;
+    let newItemsPerPage = 3;
+
+    if (width <= 767) {
+      newItemsPerPage = 1;
+    } else if (width <= 1199) {
+      newItemsPerPage = 2;
+    } else {
+      newItemsPerPage = 3;
+    }
+
+    if (newItemsPerPage !== this.itemsPerfreelancePage) {
+      this.itemsPerfreelancePage = newItemsPerPage;
+      this.currentfreelancePage = 1;
+      this.updateFreelancePaginatedProjects();
+    }
+  }
+
+  updateCompanyPaginatedProjects() {
+    const startIndex = (this.currentCompanyPage - 1) * this.itemsPerCompanyPage;
+    const endIndex = startIndex + this.itemsPerCompanyPage;
+    this.paginatedcompanyProjects = this.companyprojects.slice(startIndex, endIndex);
+    this.totalCompanyPages = Math.ceil(this.companyprojects.length / this.itemsPerCompanyPage);
+  }
+
+  updateFreelancePaginatedProjects() {
+    const startIndex = (this.currentfreelancePage - 1) * this.itemsPerfreelancePage;
+    const endIndex = startIndex + this.itemsPerfreelancePage;
+    this.paginatedfreelanceProjects = this.freelanceproject.slice(startIndex, endIndex);
+    this.totalfreelancePages = Math.ceil(this.freelanceproject.length / this.itemsPerfreelancePage);
   }
 
   nextPage() {
-    if (this.currentPage < this.totalPages) {
-      this.currentPage++;
-      this.updatePaginatedProjects();
+    if (this.currentCompanyPage < this.totalCompanyPages) {
+      this.currentCompanyPage++;
+      this.updateCompanyPaginatedProjects();
     }
   }
 
   prevPage() {
-    if (this.currentPage > 1) {
-      this.currentPage--;
-      this.updatePaginatedProjects();
+    if (this.currentCompanyPage > 1) {
+      this.currentCompanyPage--;
+      this.updateCompanyPaginatedProjects();
+    }
+  }
+
+  nextPageFreelance() {
+    if (this.currentfreelancePage < this.totalfreelancePages) {
+      this.currentfreelancePage++;
+      this.updateFreelancePaginatedProjects();
+    }
+  }
+
+  prevPageFreelance() {
+    if (this.currentfreelancePage > 1) {
+      this.currentfreelancePage--;
+      this.updateFreelancePaginatedProjects();
     }
   }
 }
