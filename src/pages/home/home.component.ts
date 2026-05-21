@@ -37,15 +37,13 @@ export class HomeComponent {
   downloadCV() {
     const link = document.createElement('a');
     link.href = 'assets/PrasannaResume.pdf';
-    link.download = 'Prasanna_CV.pdf';
+    link.download = 'PrasannaResume.pdf';
     link.click();
   }
 
   frontEndSkills = [
     { name: 'Angular', level: 94 },
     { name: 'TypeScript', level: 90 },
-    { name: 'React', level: 88 },
-    { name: 'Next.js', level: 85 },
     { name: 'HTML', level: 95 },
     { name: 'CSS', level: 90 },
     { name: 'BOOSTRAP', level: 92 },

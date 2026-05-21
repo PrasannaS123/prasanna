@@ -109,6 +109,25 @@ export class ProjectsComponent implements OnInit {
       tools: 'Flutter, Dart, REST API, Firebase, GitLab',
       role: 'Flutter Developer (UI & App Development)',
     },
+    {
+      title: 'ERP — Gold Manufacturing',
+      image: 'assets/projects/golderp.jpg',
+      description:
+        'Worked on the existing Megha ERP platform by developing Angular UI modules and integrating REST APIs for gold manufacturing, inventory tracking, and process management. Also contributed to selected back-end APIs using Java Spring Boot with AI-assisted development.',
+      duration: 'Feb 2026 – Present',
+      tools: 'Angular, TypeScript, HTML5, CSS, REST API, Java Spring Boot',
+      role: 'Front-End Developer & API Integration',
+    },
+    {
+      title: 'Jamindhar - Hostel Services',
+      image: 'assets/projects/hostel.jpg',
+      description:
+        'Developed responsive Angular UI modules and integrated REST APIs for hostel room allocation, occupancy tracking, and facilities management. Also contributed to selected back-end APIs using Java Spring Boot with AI-assisted development.',
+      duration: 'Feb 2026 – Present',
+      tools: 'Angular, TypeScript, HTML5, CSS, REST API, Java Spring Boot',
+      role: 'Front-End Developer & API Integration',
+    },
+   
   ];
 
   freelanceproject = [
