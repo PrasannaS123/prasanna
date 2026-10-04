@@ -1,126 +1,224 @@
 .projects {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 h5 {
-    color: rgb(85, 230, 165);
+    color: #059669;
     text-transform: uppercase;
-    font-size: 16px;
-    display: block;
-    font-family: "Poppins", sans-serif !important;
-    font-weight: 500;
-    letter-spacing: 1.4px;
-}
-
-.nav.nav-pills {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif !important;
-    
-}
-
-.nav-link {
-    color: rgb(85, 230, 165);
-    border: 2px solid rgb(85, 230, 165);
-}
-
-.nav-link.active {
-    background-color: rgb(85, 230, 165);
-    color: black;
+    font-size: 13.5px;
+    font-family: var(--font-display) !important;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
-    font-size: 38px;
-    display: block;
-    font-family: "Poppins", sans-serif !important;
+    color: #0f172a;
+    font-size: 40px;
+    font-family: var(--font-display) !important;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav.nav-pills {
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 999px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    display: inline-flex;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-link {
+    color: #64748b;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 24px;
+    font-family: var(--font-main);
+    font-size: 14px;
     font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.nav-link:hover {
+    color: #0f172a;
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.project-item-card {
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 16px;
+    padding: 18px;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.project-item-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.1);
 }
 
 .project-card {
-    background-color: rgb(9, 16, 26);
-    padding: 20px;
-    width: 100% !important;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 16px;
+    border-radius: 0 0 12px 12px;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid #f1f5f9;
 }
 
 .project-title {
-    color: rgb(85, 230, 165);
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    height: 24px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    color: #059669;
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .project-desc {
-    color: rgb(162, 162, 162);
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28px;
+    color: #475569;
+    font-family: var(--font-main);
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .sub-title {
-    color: rgb(162, 162, 162);
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    color: #64748b;
+    font-family: var(--font-code);
+    font-size: 11.5px;
     font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .project-list img {
     width: 100%;
-    height: 350px;
+    height: 320px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
 }
 
 .rolename {
-    color: rgb(85, 230, 165);
+    color: #0f172a;
+    font-family: var(--font-main);
+    font-size: 13.5px;
+    font-weight: 600;
 }
 
 .icon-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgb(85, 230, 165);
-    background-color: transparent;
-    display: flex;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
-    color: rgb(85, 230, 165);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #0f172a;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+    cursor: pointer;
 }
 
-.icon-button:hover {
-    background-color: rgb(85, 230, 165);
-    color: #000;
+.icon-button:hover:not(:disabled) {
+    background-color: #f8fafc;
+    color: #059669;
+    border-color: #059669;
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.15);
+    transform: translateY(-2px);
 }
 
 .icon-button:disabled {
-    opacity: 0.4;
+    opacity: 0.35;
     cursor: not-allowed;
+    background-color: #f1f5f9;
+    border-color: #e2e8f0;
 }
 
+.coming-soon-card {
+    background: #ffffff;
+    border: 2px dashed rgba(16, 185, 129, 0.3);
+    border-radius: 16px;
+    padding: 24px;
+}
 
 .coming-soon-card .project-title {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: #0f172a;
 }
 
 .coming-soon-card .project-desc {
     font-size: 0.95rem;
-    color: #666;
+    color: #64748b;
     line-height: 1.6;
 }
 
-@media(max-width: 768px) {
+.coming-soon-image img {
+    border-radius: 12px;
+    opacity: 0.85;
+}
 
+.live-link-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #ffffff;
+    padding: 9px 20px;
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.live-link-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.title-link {
+    color: #059669;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.title-link:hover {
+    color: #047857;
+    text-decoration: none;
+}
+
+.project-preview-link {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    display: block;
+}
+
+.project-preview-link img {
+    transition: transform 0.4s ease;
+}
+
+.project-preview-link:hover img {
+    transform: scale(1.04);
+}
+
+@media(max-width: 768px) {
     h2 {
         font-size: 28px;
     }

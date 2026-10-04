@@ -1,51 +1,104 @@
 <section class="home">
     <div class="home-sec">
         <div class="container">
-            <div class="row d-flex align-items-center g-lg-5 g-2">
+            <div class="row d-flex align-items-center g-lg-5 g-4">
                 <div class="col-lg-7 col-12">
                     <div class="details">
-                        <h1>HI, I'M PRASANNA!</h1>
-                        <h1 class="title mb-lg-4 mb-3">
+                        <div class="status-badge d-inline-flex align-items-center mb-3">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for Full-Stack Opportunities</span>
+                        </div>
+                        <h1 class="greeting">PRASANNA S</h1>
+                        <h2 class="title mb-lg-4 mb-3">
                             <span class="role">
-                                Specialist in <br class="d-lg-none d-inline " />
+                                Architecting <br class="d-lg-none d-inline" />
                                 <span class="animated-role" [class.fade-out]="fadeOut">{{ currentRole }}</span>
                             </span>
-                        </h1>
+                        </h2>
 
-                        <p class="job-desc mb-lg-5 mb-3 text-jusitify">
-                            Front-End & Flutter Developer with 2.5+ years of experience in building responsive, scalable, and high-performance web
-                            applications using
-                            <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>,
-                            <strong>Angular</strong>, and <strong>TypeScript</strong>.
-                            Experienced in developing reusable UI components, integrating REST APIs, optimizing performance,
-                            and delivering clean, user-friendly interfaces. Also experienced in building cross-platform mobile
-                            applications using <strong>Flutter</strong> for Android.
-                        <br> <br>
-                            As a freelance developer, I help startups, businesses, and individuals build modern websites using
-                            <strong>Angular</strong> and cross-platform mobile applications using <strong>Flutter</strong>.
-                            From business websites to admin dashboards and mobile apps, I focus on creating reliable, responsive,
-                            and production-ready digital solutions tailored to client needs.
+                        <p class="job-desc mb-lg-4 mb-3 text-justify">
+                            <strong>Full-Stack Developer</strong> with 3+ years of experience in web application
+                            development. Skilled in <strong>Angular</strong>, <strong>Next.js</strong>,
+                            <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Flutter</strong> with
+                            experience in building responsive user interfaces, developing backend APIs, and integrating
+                            RESTful services. Worked on ERP systems, customer ordering platforms, and inventory
+                            management applications.
                         </p>
-                        <button class="button mb-lg-0 mb-5" (click)="downloadCV()">
-                            <div class=" d-flex align-items-center">
-                                <p class="me-1 mb-0">View Resume</p>
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <g id="Interface / Download">
-                                            <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
-                                                stroke="#02050a" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
+
+                        <div class="quick-highlights d-flex flex-wrap gap-2 mb-4">
+                            <span class="highlight-chip">Angular & Next.js</span>
+                            <span class="highlight-chip">Java & Spring Boot</span>
+                            <span class="highlight-chip">REST APIs & DBs</span>
+                            <span class="highlight-chip">Flutter Mobile</span>
+                            <span class="highlight-chip">AI Workflows</span>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <button class="button" (click)="downloadCV()">
+                                <div class="d-flex align-items-center">
+                                    <p class="me-2 mb-0">Download Resume</p>
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
+                            </button>
+                            <a routerLink="/projects" class="button-outline text-decoration-none">
+                                Explore Projects
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-5 d-lg-inline d-none">
-                    <div class="img-circle">
-                        <img src="../../assets/photo.jpg" class="img-fluid" alt="">
+                <div class="col-lg-5 col-12">
+                    <div class="hero-tech-card">
+                        <div class="terminal-header d-flex align-items-center justify-content-between mb-3">
+                            <div class="terminal-dots d-flex gap-2">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">developer.profile.ts</span>
+                            <span class="terminal-branch">main</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">
+                                    developer</span> = &#123;</div>
+                            <div class="code-line indent-1"><span class="code-prop">name</span>: <span
+                                    class="code-str">'Prasanna S'</span>,</div>
+                            <div class="code-line indent-1"><span class="code-prop">role</span>: <span
+                                    class="code-str">'Full-Stack Developer'</span>,</div>
+                            <div class="code-line indent-1"><span class="code-prop">experience</span>: <span
+                                    class="code-str">'3 Years'</span>,</div>
+                            <div class="code-line indent-1"><span class="code-prop">expertise</span>: [</div>
+                            <div class="code-line indent-2"><span class="code-str">'Angular'</span>, <span
+                                    class="code-str">'Next.js'</span>, <span class="code-str">'React'</span>,</div>
+                            <div class="code-line indent-2"><span class="code-str">'Java'</span>, <span
+                                    class="code-str">'Spring Boot'</span>, <span class="code-str">'PostgreSQL'</span>,
+                            </div>
+                            <div class="code-line indent-2"><span class="code-str">'Flutter & Dart'</span></div>
+                            <div class="code-line indent-1">],</div>
+
+                            <div class="code-line indent-1"><span class="code-prop">status</span>: <span
+                                    class="code-success">'Ready to Build'</span></div>
+                            <div class="code-line">&#125;;</div>
+                        </div>
+                        <div class="hero-stats-grid mt-4 pt-3">
+                            <div class="stat-box text-center">
+                                <div class="stat-num">3+</div>
+                                <div class="stat-label">Years Exp.</div>
+                            </div>
+                            <div class="stat-box text-center">
+                                <div class="stat-num">15+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-box text-center">
+                                <div class="stat-num">100%</div>
+                                <div class="stat-label">Production Ready</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,14 +106,14 @@
     </div>
     <div class="service-sec">
         <div class="container">
-            <h5 class="text-center  mb-3">WHAT I DO</h5>
-            <h2 class="text-center mb-5">Developing smart, scalable <br> web and mobile apps</h2>
-            <div class="row g-lg-5 g-3">
-                <div class="col-lg-6 col-12">
-                    <div class="service position-relative text-center">
-                        <h3 class="service-title mb-3">Crafting the Modern Web</h3>
-                        <p class="service-desc">Using Angular and TypeScript to build fast, scalable, and responsive web
-                            applications that bring ideas to life.</p>
+            <h5 class="text-center mb-3">WHAT I DO</h5>
+            <h2 class="text-center mb-5">Developing smart, scalable <br> full-stack & mobile solutions</h2>
+            <div class="row g-lg-4 g-3">
+                <div class="col-lg-4 col-12">
+                    <div class="service position-relative text-center h-100">
+                        <h3 class="service-title mb-3">Frontend Development</h3>
+                        <p class="service-desc">Building fast, scalable, and responsive web applications with Angular,
+                            Next.js, React, TypeScript, and modern styling libraries.</p>
                         <div class="position-absolute top-0 start-50 translate-middle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="99" height="101" viewBox="0 0 99 101"
                                 fill="none">
@@ -77,15 +130,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <div class="service position-relative text-center">
-                        <h3 class="service-title mb-3">Apps Development</h3>
-                        <p class="service-desc">
-                            Building beautiful, high-performance mobile applications with Flutter — designed to deliver
-                            seamless and engaging
-                            user experiences.
-                        </p>
-
+                <div class="col-lg-4 col-12">
+                    <div class="service position-relative text-center h-100">
+                        <h3 class="service-title mb-3">Backend & APIs</h3>
+                        <p class="service-desc">Architecting backend business logic, robust RESTful APIs, request
+                            validation, and database operations using Java, Spring Boot, and PostgreSQL.</p>
+                        <div class="position-absolute top-0 start-50 translate-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="100" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M4 6C4 4.34315 7.58172 3 12 3C16.4183 3 20 4.34315 20 6M4 6V12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12V6M4 6C4 7.65685 7.58172 9 12 9C16.4183 9 20 7.65685 20 6M4 12V18C4 19.6569 7.58172 21 12 21C16.4183 21 20 19.6569 20 18V12"
+                                    stroke="#55E6A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="service position-relative text-center h-100">
+                        <h3 class="service-title mb-3">Mobile & Cross-Platform</h3>
+                        <p class="service-desc">Building beautiful, high-performance mobile applications with Flutter
+                            and Dart, engineered for seamless cross-platform user experiences.</p>
                         <div class="position-absolute top-0 start-50 translate-middle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="98" height="100" viewBox="0 0 117 100"
                                 fill="none">
@@ -115,69 +179,101 @@
         <div class="container">
             <h5 class="text-center mb-3">Education, Experience & Technical Skills</h5>
             <h2 class="text-center mb-5">
-                Combining knowledge, expertise, <br> and practical development
+                Combining knowledge, enterprise experience, <br> and end-to-end engineering
             </h2>
 
             <div class="skill pt-lg-4 pt-3">
-                <div class="row g-lg-5 g-3">
-                    <div class="col-lg-6 col-12">
-                        <span class="year mb-4">2018 - 2022</span>
-                        <h3 class="skill-title mb-3">B.E. in Mechanical Engineering</h3>
+                <div class="row g-lg-5 g-4 mb-5">
+                    <div class="col-lg-4 col-12">
+                        <span class="year mb-4">2026 - Present</span>
+                        <h3 class="skill-title mb-3">Full-Stack Developer</h3>
                         <p class="skill-desc">
-                            Studied at <strong>Nandha College of Technology</strong>, gaining strong analytical and
-                            problem-solving
-                            skills, now applied to practical
-                            web and modern mobile app development.
+                            <strong>U2 Breakthrough Technology</strong><br>
+                            Developing full-stack modules using Angular, Next.js, Java, and Spring Boot. Contributing to
+                            gold manufacturing ERP (Megha ERP), hostel management (Jamindhar), and customer ordering
+                            platform (iPickup) with RESTful APIs, core business logic, and automated workflows.
                         </p>
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <span class="year mb-4">2023 - Present</span>
+                    <div class="col-lg-4 col-12">
+                        <span class="year mb-4">2023 - 2025</span>
                         <h3 class="skill-title mb-3">Front-End & Flutter Developer</h3>
                         <p class="skill-desc">
-                            Worked at <strong>Paperfox Technologies (Aug 2023 – Nov 2025)</strong> as a Front-End & Flutter Developer,
-                            building responsive web applications using Angular and cross-platform mobile apps using Flutter.
-                            Currently working at <strong>U2 Breakthrough Technology (Feb 2026 – Present)</strong> as a Front-End Developer,
-                            developing scalable Angular applications with REST API integration and modern UI development.
+                            <strong>Paperfox Technologies (Aug 2023 – Nov 2025)</strong><br>
+                            Developed responsive web applications with Angular, TypeScript, and Bootstrap (Postcargo,
+                            Ship2myId, SuperAdmin, EzyCampus, and business websites). Built cross-platform mobile apps
+                            using Flutter and Dart (Azerpost platform, EzyCampus apps).
                         </p>
                     </div>
-                    <div class="row gx-lg-5 gy-lg-3 gy-1 gx-3">
-                        <div class="col-lg-6 col-12" *ngFor="let skill of frontEndSkills">
-                            <div class="skill-card">
-                                <p class="skill-text mb-0">{{ skill.name }}</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" #progressFill></div>
+                    <div class="col-lg-4 col-12">
+                        <span class="year mb-4">2018 - 2022</span>
+                        <h3 class="skill-title mb-3">B.E. Mechanical Engineering</h3>
+                        <p class="skill-desc">
+                            <strong>Nandha College of Engineering, Erode</strong><br>
+                            Graduated with a strong analytical foundation and problem-solving mindset, transitioning
+                            seamlessly into enterprise web engineering, backend development, and scalable modern web
+                            architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skills-breakdown mt-4">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-12">
+                            <h4 class="category-heading mb-3">Frontend Development</h4>
+                            <div class="row g-2">
+                                <div class="col-12" *ngFor="let skill of frontEndSkills">
+                                    <div class="skill-card">
+                                        <p class="skill-text mb-0">{{ skill.name }}</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" #progressFill></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12" *ngFor="let skill of mobileSkills">
-                            <div class="skill-card">
-                                <p class="skill-text mb-0">{{ skill.name }}</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" #progressFill></div>
+                        <div class="col-lg-6 col-12">
+                            <h4 class="category-heading mb-3">Backend & Database</h4>
+                            <div class="row g-2">
+                                <div class="col-12" *ngFor="let skill of backendSkills">
+                                    <div class="skill-card">
+                                        <p class="skill-text mb-0">{{ skill.name }}</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" #progressFill></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12" *ngFor="let skill of versionControlSkills">
-                            <div class="skill-card">
-                                <p class="skill-text mb-0">{{ skill.name }}</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" #progressFill></div>
+                        <div class="col-lg-6 col-12">
+                            <h4 class="category-heading mb-3">Mobile & Cross-Platform</h4>
+                            <div class="row g-2">
+                                <div class="col-12" *ngFor="let skill of mobileSkills">
+                                    <div class="skill-card">
+                                        <p class="skill-text mb-0">{{ skill.name }}</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" #progressFill></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12" *ngFor="let skill of otherSkills">
-                            <div class="skill-card">
-                                <p class="skill-text mb-0">{{ skill.name }}</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" #progressFill></div>
+                        <div class="col-lg-6 col-12">
+                            <h4 class="category-heading mb-3">Tools & Core Competencies</h4>
+                            <div class="row g-2">
+                                <div class="col-12" *ngFor="let skill of toolsAndDevSkills">
+                                    <div class="skill-card">
+                                        <p class="skill-text mb-0">{{ skill.name }}</p>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" #progressFill></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -186,24 +282,22 @@
         <div class="container">
             <div class="row g-lg-2 g-4 mb-lg-5 mb-2">
                 <div class="col-lg-9 col-12">
-                    <h5 class="text-start mb-3">Projects</h5>
+                    <h5 class="text-start mb-3">Featured Projects</h5>
                     <h2 class="text-start">
-                        Showcasing Innovative Solutions Through <br> Real-World Projects
+                        Showcasing Innovative Solutions Across <br> Enterprise & Full-Stack Systems
                     </h2>
-
                 </div>
                 <div class="col-lg-3 col-12 d-flex align-items-end justify-content-end">
                     <a routerLink="/projects" class="button mb-lg-0 mb-5 text-decoration-none">
                         <div class=" d-flex align-items-center">
-                            <p class="me-1 mb-0">More Projects</p>
+                            <p class="me-1 mb-0">All Projects</p>
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px" viewBox="0 0 24 24"
                                     fill="none">
                                     <path
                                         d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z"
-                                        fill="#0F0F0F" />
+                                        fill="#ffffff" />
                                 </svg>
-
                             </div>
                         </div>
                     </a>
@@ -212,43 +306,39 @@
             <div class="row g-lg-5 g-3">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="position-relative mb-2">
-                        <img src="../../assets/projects/azerpost.jpg" class="img-fluid" alt="">
+                        <img src="../../assets/projects/ipickup.jpg" class="img-fluid" alt="iPickup Platform">
                         <div class="position-absolute bottom-0 start-0 w-100">
                             <div class="project-card text-center">
-                                <h3 class="project-title mb-0">Azerpost</h3>
+                                <h3 class="project-title mb-0">iPickup Platform</h3>
                             </div>
                         </div>
                     </div>
-                    <p class="project-desc">Modernized Azerbaijan’s national postal service platform with a sleek,
-                        user-friendly
-                        interface. Connected front-end with
-                        APIs for smooth, real-time updates.</p>
+                    <p class="project-desc">Customer ordering and vendor pickup management platform with subscriptions,
+                        real-time order tracking, and location search built with Next.js, React, Java & Spring Boot.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="position-relative mb-2">
-                        <img src="../../assets/projects/postcargo.jpg" class="img-fluid" alt="">
+                        <img src="../../assets/projects/golderp.jpg" class="img-fluid" alt="Megha ERP">
                         <div class="position-absolute bottom-0 start-0 w-100">
                             <div class="project-card text-center">
-                                <h3 class="project-title mb-0">Postcargo</h3>
+                                <h3 class="project-title mb-0">Megha ERP</h3>
                             </div>
                         </div>
                     </div>
-                    <p class="project-desc">Built a user-friendly interface for Postcargo, streamlining cargo and
-                        logistics management. Integrated APIs for seamless
-                        front-end and back-end interaction.</p>
+                    <p class="project-desc">Gold manufacturing and process management ERP application with inventory
+                        tracking, process workflows, and REST API integration in Angular and Spring Boot.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="position-relative mb-2">
-                        <img src="../../assets/projects/parentapp.jpg" class="img-fluid" alt="">
+                        <img src="../../assets/projects/hostel.jpg" class="img-fluid" alt="Jamindhar Hostel Management">
                         <div class="position-absolute bottom-0 start-0 w-100">
                             <div class="project-card text-center">
-                                <h3 class="project-title mb-0">EZYCAMPUS PARENT APP</h3>
+                                <h3 class="project-title mb-0">Jamindhar</h3>
                             </div>
                         </div>
                     </div>
-                    <p class="project-desc">Developed the EzyCampus Parent App in Flutter for Android, allowing parents
-                        to track attendance, homework, timetables,
-                        and notifications with a smooth, responsive, and scalable experience.</p>
+                    <p class="project-desc">Hostel allocation and facilities management application featuring room
+                        allocation, occupancy tracking, and structured UI components with Angular and Spring Boot.</p>
                 </div>
             </div>
         </div>

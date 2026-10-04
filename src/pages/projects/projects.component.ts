@@ -11,6 +11,33 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
   companyprojects = [
     {
+      title: 'iPickup Platform',
+      image: 'assets/projects/ipickup.jpg',
+      description:
+        'A comprehensive customer-facing ordering platform that enables customers to browse products, place orders, and collect orders from vendors. Contributed to customer web application features including product discovery, search, cart, subscriptions with daily/weekly/monthly schedules, location-based pickup scheduling, and vendor-side order processing dashboards.',
+      duration: 'May 2026 – Present',
+      tools: 'Next.js, React, TypeScript, Angular, Java, Spring Boot, REST APIs, PostgreSQL',
+      role: 'Full-Stack Developer (Customer & Vendor Modules, REST APIs)',
+    },
+    {
+      title: 'Megha ERP – Gold Manufacturing',
+      image: 'assets/projects/golderp.jpg',
+      description:
+        'Enterprise resource planning (ERP) platform for gold manufacturing and process management. Developed and enhanced responsive Angular frontend modules for manufacturing workflows, inventory tracking, and operational management. Contributed to Java & Spring Boot backend APIs and data flow optimization.',
+      duration: 'Feb 2026 – Mar 2026',
+      tools: 'Angular, TypeScript, Java, Spring Boot, REST APIs, PostgreSQL',
+      role: 'Full-Stack Developer (Frontend Modules & Backend APIs)',
+    },
+    {
+      title: 'Jamindhar – Hostel Management',
+      image: 'assets/projects/hostel.jpg',
+      description:
+        'Hostel allocation and facilities management application. Implemented responsive Angular UI interfaces supporting room allocation, occupancy tracking, and facilities management. Integrated REST APIs and contributed to Java and Spring Boot backend services.',
+      duration: 'Apr 2026 – Present',
+      tools: 'Angular, TypeScript, Java, Spring Boot, REST APIs, PostgreSQL',
+      role: 'Full-Stack Developer (UI Modules & Backend APIs)',
+    },
+    {
       title: 'Postcargo',
       image: 'assets/projects/postcargo.jpg',
       description:
@@ -38,11 +65,20 @@ export class ProjectsComponent implements OnInit {
       role: 'Front-End Developer (UI & API Integration)',
     },
     {
-      title: 'Ship2myId',
+      title: 'Ship2myId – Reports Module',
       image: 'assets/projects/ship2myid.jpg',
       description:
         'A comprehensive reporting module built to deliver actionable insights for shipping data management. It enables users to monitor, analyze, and track real-time shipment metrics through dynamic charts and detailed dashboards. The interface was designed to be intuitive, responsive, and data-driven using Angular and RESTful APIs.',
       duration: 'Jun 2024 – Jul 2024',
+      tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, GitLab',
+      role: 'Front-End Developer (UI & API Integration)',
+    },
+    {
+      title: 'SuperAdmin Portal',
+      image: 'assets/projects/superadmin.jpg',
+      description:
+        'A comprehensive administrative portal designed to streamline user, role, and configuration management. Built with a responsive Angular interface and seamless API integration, it enhances operational efficiency and provides full control for system administrators.',
+      duration: 'Aug 2024 – Nov 2024',
       tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, GitLab',
       role: 'Front-End Developer (UI & API Integration)',
     },
@@ -54,15 +90,6 @@ export class ProjectsComponent implements OnInit {
       duration: 'Jul 2024 – Aug 2024',
       tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, GitLab',
       role: 'Front-End Developer (UI Design)',
-    },
-    {
-      title: 'SuperAdmin Portal',
-      image: 'assets/projects/superadmin.jpg',
-      description:
-        'A comprehensive administrative portal designed to streamline user, role, and configuration management. Built with a responsive Angular interface and seamless API integration, it enhances operational efficiency and provides full control for system administrators.',
-      duration: 'Aug 2024 – Nov 2024',
-      tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, GitLab',
-      role: 'Front-End Developer (UI & API Integration)',
     },
     {
       title: 'RDB Website',
@@ -108,26 +135,7 @@ export class ProjectsComponent implements OnInit {
       duration: 'Jun 2025 – Dec 2025',
       tools: 'Flutter, Dart, REST API, Firebase, GitLab',
       role: 'Flutter Developer (UI & App Development)',
-    },
-    {
-      title: 'ERP — Gold Manufacturing',
-      image: 'assets/projects/golderp.jpg',
-      description:
-        'Worked on the existing Megha ERP platform by developing Angular UI modules and integrating REST APIs for gold manufacturing, inventory tracking, and process management. Also contributed to selected back-end APIs using Java Spring Boot with AI-assisted development.',
-      duration: 'Feb 2026 – Present',
-      tools: 'Angular, TypeScript, HTML5, CSS, REST API, Java Spring Boot',
-      role: 'Front-End Developer & API Integration',
-    },
-    {
-      title: 'Jamindhar - Hostel Services',
-      image: 'assets/projects/hostel.jpg',
-      description:
-        'Developed responsive Angular UI modules and integrated REST APIs for hostel room allocation, occupancy tracking, and facilities management. Also contributed to selected back-end APIs using Java Spring Boot with AI-assisted development.',
-      duration: 'Feb 2026 – Present',
-      tools: 'Angular, TypeScript, HTML5, CSS, REST API, Java Spring Boot',
-      role: 'Front-End Developer & API Integration',
-    },
-   
+    }
   ];
 
   freelanceproject = [
@@ -135,21 +143,23 @@ export class ProjectsComponent implements OnInit {
       title: 'Indrio Automation',
       image: 'assets/projects/automation.jpg',
       description:
-        'A modern and fully responsive website interface designed for Indrio Automation, focused on presenting industrial solutions and services with clarity and precision. The design emphasizes clean layouts, intuitive navigation, and consistent visual hierarchy to ensure a professional user experience, delivering a polished and accessible interface across desktop and mobile devices.',
-      duration: 'Dec 2025',
-      tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, REST API, Github',
-      role: 'Front-End Developer (UI)',
+        'A modern and fully responsive website interface designed for Indrio Automation, showcasing industrial solutions and services with clarity and precision. Configured domain management, DNS routing, and Cloudflare deployment while ensuring optimized performance across all devices.',
+      duration: 'Dec 2025 – Jan 2026',
+      tools: 'Angular, TypeScript, Bootstrap, HTML5, CSS, Cloudflare',
+      role: 'Freelance Front-End Developer',
+      link: 'https://www.indrioautomation.com/'
     },
     {
       title: 'Jaja Finex',
       image: 'assets/projects/jaja-finex.jpg',
       description:
-        'A modern and feature-rich online trading and investment platform interface designed for Jaja Finex, focused on delivering a seamless experience across stock trading, IPO investments, mutual funds, and financial services. The design highlights clean layouts, strong visual hierarchy to ensure clarity, trust, and usability, providing a professional.',
-      duration: 'Jan 2025',
-      tools: 'Next.js, React Components, Tailwind CSS',
-      role: 'Front-End Developer (UI)',
+        'A modern and feature-rich online trading and investment platform interface built for Jaja Finex. Presents trading services and company information with clean layouts, cross-device responsiveness, and complete domain and production deployment setup.',
+      duration: 'Dec 2025 – Jan 2026',
+      tools: 'Angular, TypeScript, Responsive Web Design, Cloudflare',
+      role: 'Freelance Front-End Developer',
+      link: 'https://www.jajafinex.com/'
     }
-  ]
+  ];
 
   paginatedcompanyProjects: any[] = [];
   currentCompanyPage = 1;
